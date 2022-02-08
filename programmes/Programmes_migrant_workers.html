@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html class="uk-overflow-hidden" style="overflow-y: scroll;">
+    <head>
+        <link rel="icon" href="../images\logos\logo_contrast.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Service Learning Summit</title>
+        <link rel="stylesheet" href="../css/uikit.isyf-theme.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link type="text/css" href="../css/OverlayScrollbars.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <style>
+            @media screen and (min-width: 0px) {   
+                #main-img{
+                    background-image: url(../pics/fun2.jpg);
+                    background-size: fill;
+                } 
+            }
+            @media screen and (min-width: 640px) {   
+                #main-img{
+                    background-image: url(../pics/fun2.jpg);
+                    background-size: fill;
+                } 
+            }
+            @media screen and (min-width: 960px) {   
+                #main-img{
+                    background-image: url(../pics/fun2.jpg);
+                    background-size: fill;
+                } 
+            }
+        </style>
+    </head>
+    <body class='disable-select uk-overflow-hidden' style="width: 100%;">
+        <div id='top_sec' uk-grid>
+            <div class='uk-width-auto'>
+                <img style='padding-top: 5px;' data-src="../pics/image_d.jpeg" height='75px' width="75px" uk-img="">
+            </div>  
+            <div class="uk-width-expand uk-position-relative uk-background-cover" style=' background-color: #404040;' uk-parallax='bgy: 70'  uk-img>
+                <div class="uk-visible@m uk-margin-medium-top uk-margin-small-left" style="background-color: #404040;  margin-left: -40px"></div>
+                
+                <!--
+                <div class='uk-position-bottom uk-grid uk-padding uk-padding-remove-bottom uk-padding-remove-right uk-overflow-hidden' style="height: 94%;" uk-grid>
+                    <div class='uk-width-1-2 uk-visible@m' style="min-width: fit-content;">
+                        <div class="uk-position-top-1 uk-margin-medium-bottom uk-margin-medium-left uk-padding uk-padding-remove-bottom">
+                        </div>
+                    </div>
+                    
+                    <div class='uk-position-relative uk-visible@s uk-hidden@m uk-margin-left' style="width: 100%;">
+                        <div class="uk-position-top-3 uk-margin-large-bottom uk-margin-left" style="min-width: 100%;">
+                            </div>
+                    </div>
+                    
+                    <div class='uk-position-relative uk-hidden@s uk-margin-left' style="width: 100%;"> 
+                        <div class='uk-position-top-1 uk-margin-bottom' style="min-width: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+            -->
+
+                <div id='top_nav_container' class='uk-position-top uk-visible@m'>
+                    <nav class='uk-navbar-container uk-navbar-transparent uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-margin-small-left' uk-navbar>
+                        <div class="uk-navbar-left uk-padding-small uk-padding-remove-left">
+                            <ul class="uk-navbar-nav" onmouseover='showProfiles("profilesBar")' onmouseleave='hideProfiles("profilesBar")'>
+                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../home/index.html">Home</a></li>
+                                <li class='uk-text-bold uk-active uk-margin-large-right'><a style='text-transform: capitalize;' href="../programmes/index.html">Programmes</a></li>
+                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../speakers/index.html">Our Speakers</a></li>
+                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../about/index.html">About Us</a></li>
+                                <li class='uk-text-bold '><a style='text-transform: capitalize;' href="../join/index.html">Join Us</a></li>
+                            </ul>
+                        </div>
+                        
+                    </nav>
+
+                </div>
+                
+                <span  href="#offcanvas-slide" class="uk-button uk-hidden@m uk-padding-small" style="color: #38b6ff; height: fit-content;" uk-toggle uk-icon="icon: menu; ratio: 1.5;"></span>
+                
+                <div id="offcanvas-slide" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+                            <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                                <div class='uk-inline-block'>
+                                    <a class='uk-inline' style='text-transform: capitalize;' href="../home">Home</a>
+                                    <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+                            <li class="uk-text-bold uk-active uk-margin-large-right uk-margin-bottom uk-parent">
+                                <a class="uk-inline" style="text-transform: capitalize; color: white;" href="../programmes/index.html">Programmes</a>
+            
+                                <ul class="uk-nav-sub uk-margin-small-top" hidden="">
+                                    <li>
+                                        <div class="uk-inline-block">
+                                            <a href="../programmes/Programmes_poverty.html">Poverty</a>
+                                            <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-margin-small-top">
+                                        <div class="uk-inline-block">
+                                            <a href="../programmes/Programmes_environment.html">Environment</a>
+                                            <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px; "></div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-margin-small-top">
+                                        <div class="uk-inline-block">
+                                            <a href="../programmes/Programmes_special_needs.html">Special Needs</a>
+                                            <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-margin-small-top">
+                                        <div class="uk-inline-block">
+                                            <a href="../programmes/Programmes_migrant_workers.html">Migrant Workers</a>
+                                            <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px; background-color: #38b6ff;"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                                <div class='uk-inline-block'>
+                                    <a class='uk-inline' style='text-transform: capitalize;' href="../speakers">Our Speakers</a>
+                                    <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+                            <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                                <div class='uk-inline-block'>
+                                    <a class='uk-inline' style='text-transform: capitalize;' href="../about">About Us</a>
+                                    <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+                            <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                                <div class='uk-inline-block'>
+                                    <a class='uk-inline' style='text-transform: capitalize;' href="../join">Join Us</a>
+                                    <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+       
+
+                <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                    <div class="uk-inline">
+                        <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+
+        <div id='body_content_1' class='uk-section uk-margin-large-bottom uk-visible@m'>
+            <div class="uk-padding-left" uk-scrollspy='cls: uk-animation-slide-left;'>
+                <h1 class='uk-text-bold uk-margin-remove-top'>Migrant Workers</h1>
+            </div>
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+            
+
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_1_text_column' class='uk-width-auto' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>General Overview</h3>
+                        <div class="uk-column-1-2 uk-column-divider">
+                            <p class='uk-text-break uk-text-justify'>The official definition of “Migrant Workers” for this edition of SLS specifically 
+                                refers to Singaporean migrant construction workers. This will apply to all discussions and information in this guide. </p>
+                            <p class='uk-text-break uk-text-justify'>Last year as of December 2020, the Ministry of Manpower announced that there are 
+                                around 311000 foreigners working in Singapore in the construction, marine and processing sectors. 
+                                This is a decrease from 370000 foreigners residing in Singapore in December 2019. </p>
+                            <p class='uk-text-break uk-text-justify'>Migrant workers to Singapore come from various countries, including Malaysia, 
+                                Bangladesh, India, Indonesia and the Philippines. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_1_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_1_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <div class='uk-inline uk-width-1-1'>
+                    </div>
+                </div>
+
+                <div id='body_content_1_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <h1 class='uk-text-bold uk-margin-small-bottom'>Migrant Workers</h1>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>General Overview</h3>
+                        <div class="uk-column-1-2 uk-column-divider">
+                            <p class='uk-text-break uk-text-justify'>The official definition of “Migrant Workers” for this edition of SLS specifically 
+                                refers to Singaporean migrant construction workers. This will apply to all discussions and information in this guide. </p>
+                            <p class='uk-text-break uk-text-justify'>Last year as of December 2020, the Ministry of Manpower announced that there are 
+                                around 311000 foreigners working in Singapore in the construction, marine and processing sectors. 
+                                This is a decrease from 370000 foreigners residing in Singapore in December 2019. </p>
+                            <p class='uk-text-break uk-text-justify'>Migrant workers to Singapore come from various countries, including Malaysia, 
+                                Bangladesh, India, Indonesia and the Philippines. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+
+
+
+
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+        <div class="uk-padding-left" uk-scrollspy='cls: uk-animation-slide-left;'>
+            <h2 class='uk-text-bold uk-margin-remove-top'>Key Issues</h2>
+        </div>
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_4_image_column' class='uk-width-expand@m' uk-parallax='y: 120px;'>
+                    <div class='uk-inline' uk-scrollspy='cls: uk-animation-slide-right;'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Migrant Worker Rights </h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            
+                            <p class='uk-text-break uk-text-justify'>Protecting migrant worker rights is one of the toughest challenges for migrant workers in Singapore.</p>
+                            <p class='uk-text-break uk-text-justify'>The first prevalent problem is that migrant workers are <strong style="color: #404040;">subject to labour right abuses and unfair treatment 
+                                by employers.¹</strong> Such labour right abuses can include restriction of movement and confiscation of passports. This means that migrant workers have to 
+                                report to their superiors before they are able to go anywhere, which poses a high level of danger to the migrant workers if their superiors are not 
+                                free in cases of emergencies. The restriction of freedom also violates the human rights of migrant workers. Abuse from employers can also come in the 
+                                form of insufficient work injury payouts. When the migrant workers are injured, they cannot work and thus rely on payouts to sustain their livelihood. 
+                                If there are insufficient payouts, the basic living standards of migrant workers could be at risk. </p>
+                            <p class='uk-text-break uk-text-justify'>Secondly, the migrant workers face <strong style="color: #404040;">exploitation by employers rooted in an inherent power asymmetry between employers and employees. 
+                                This can be caused by many factors, such as the fact that </strong>migrant workers owe a lot of money to employment agencies for bringing them from their home country to 
+                                Singapore and getting them jobs. For context, some paid as much as $10000 in agent fees to work in Singapore, 20 times their paycheck. The huge debt is exacerbated 
+                                by the fact that in order to pay for the high fees, many had to sell jewelry or land, borrow money from relatives, or take out bank loans, adding to the pressure on the 
+                                worker to make money in Singapore. In addition, their pay can be very low, as low as $18 per day, or $540 per month for hard manual labour.² This low pay is a result of 
+                                an absence of a minimum wage in Singapore. Yet, migrant workers frequently work very long hours, incentivised by their huge debt. The imbalance between the long hours 
+                                that the workers work and their low pay points to exploitation of migrant workforce by employers, such as repatriation threats made, leading to a significant disadvantage 
+                                for foreign workers during employer-employee negotiations.</p>
+                            <p class='uk-text-break uk-text-justify'>There is, fortunately, a maximum working hour limit for “foreign workers working under contract with an employer” in Singapore. 
+                                Work time is capped at 44 hours a week by law.³ Nevertheless, the power imbalance between employers and employees also results in underpayment or a complete lack of 
+                                salary for an extended period of time. Many will put up with the employer's assurances, for some number of months, that they will be paid the full amount. Some 
+                                eventually made claims after their employers stopped paying or as they realised that their promises will never come to fruition. </p>
+                            <p class='uk-text-break uk-text-justify'>Many also face severe difficulties when seeking new employers. For those who did manage to find new employers, 
+                                many would be broke as the lack of salaries caused them to exhaust their savings. This serves as a factor that reduces their ability to find new 
+                                jobs due to the nature of employment agencies - they demand upfront payment of excessive agency fees⁴ before agreeing to place them with employers. </p>
+                            <p class='uk-text-break uk-text-justify'>Lastly, even if migrant workers wanted to defend their rights, they face a <strong style="color: #404040;">lack of means to do so</strong>. There is 
+                                extremely limited union representation for migrant workers in Singapore. A public demonstration, even if peaceful and organized, is banned for them,⁵ 
+                                since they are not Singaporeans. Their unfamiliarity with the laws and policies as well as the governing system in Singapore puts them at an even 
+                                greater disadvantage. Participants can study the possibilities of advocacy for migrant workers, to foster awareness amongst the public about the 
+                                predicament of migrant workers, creating public pressure for better, stricter and more comprehensive labour laws. Other possibilities include 
+                                collaborations with existing social groups that already specialise in providing migrant workers with legal aid and consultations.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <h2 class='uk-text-bold uk-margin-remove-top'>Key Issues</h2>
+                    <div class='uk-inline'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Migrant Worker Rights </h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            <p class='uk-text-break uk-text-justify'>Protecting migrant worker rights is one of the toughest challenges for migrant workers in Singapore.</p>
+                            <p class='uk-text-break uk-text-justify'>The first prevalent problem is that migrant workers are <strong style="color: #404040;">subject to labour right abuses and unfair treatment 
+                                by employers.¹</strong> Such labour right abuses can include restriction of movement and confiscation of passports. This means that migrant workers have to 
+                                report to their superiors before they are able to go anywhere, which poses a high level of danger to the migrant workers if their superiors are not 
+                                free in cases of emergencies. The restriction of freedom also violates the human rights of migrant workers. Abuse from employers can also come in the 
+                                form of insufficient work injury payouts. When the migrant workers are injured, they cannot work and thus rely on payouts to sustain their livelihood. 
+                                If there are insufficient payouts, the basic living standards of migrant workers could be at risk. </p>
+                            <p class='uk-text-break uk-text-justify'>Secondly, the migrant workers face <strong style="color: #404040;">exploitation by employers rooted in an inherent power asymmetry between employers and employees. 
+                                This can be caused by many factors, such as the fact that </strong>migrant workers owe a lot of money to employment agencies for bringing them from their home country to 
+                                Singapore and getting them jobs. For context, some paid as much as $10000 in agent fees to work in Singapore, 20 times their paycheck. The huge debt is exacerbated 
+                                by the fact that in order to pay for the high fees, many had to sell jewelry or land, borrow money from relatives, or take out bank loans, adding to the pressure on the 
+                                worker to make money in Singapore. In addition, their pay can be very low, as low as $18 per day, or $540 per month for hard manual labour.² This low pay is a result of 
+                                an absence of a minimum wage in Singapore. Yet, migrant workers frequently work very long hours, incentivised by their huge debt. The imbalance between the long hours 
+                                that the workers work and their low pay points to exploitation of migrant workforce by employers, such as repatriation threats made, leading to a significant disadvantage 
+                                for foreign workers during employer-employee negotiations.</p>
+                            <p class='uk-text-break uk-text-justify'>There is, fortunately, a maximum working hour limit for “foreign workers working under contract with an employer” in Singapore. 
+                                Work time is capped at 44 hours a week by law.³ Nevertheless, the power imbalance between employers and employees also results in underpayment or a complete lack of 
+                                salary for an extended period of time. Many will put up with the employer's assurances, for some number of months, that they will be paid the full amount. Some 
+                                eventually made claims after their employers stopped paying or as they realised that their promises will never come to fruition. </p>
+                            <p class='uk-text-break uk-text-justify'>Many also face severe difficulties when seeking new employers. For those who did manage to find new employers, 
+                                many would be broke as the lack of salaries caused them to exhaust their savings. This serves as a factor that reduces their ability to find new 
+                                jobs due to the nature of employment agencies - they demand upfront payment of excessive agency fees⁴ before agreeing to place them with employers. </p>
+                            <p class='uk-text-break uk-text-justify'>Lastly, even if migrant workers wanted to defend their rights, they face a <strong style="color: #404040;">lack of means to do so</strong>. There is 
+                                extremely limited union representation for migrant workers in Singapore. A public demonstration, even if peaceful and organized, is banned for them,⁵ 
+                                since they are not Singaporeans. Their unfamiliarity with the laws and policies as well as the governing system in Singapore puts them at an even 
+                                greater disadvantage. Participants can study the possibilities of advocacy for migrant workers, to foster awareness amongst the public about the 
+                                predicament of migrant workers, creating public pressure for better, stricter and more comprehensive labour laws. Other possibilities include 
+                                collaborations with existing social groups that already specialise in providing migrant workers with legal aid and consultations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+    
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_4_image_column' class='uk-width-expand@m' uk-parallax='y: 120px;'>
+                    <div class='uk-inline' uk-scrollspy='cls: uk-animation-slide-right;'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Poor accommodation and living standards </h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            
+                            <p class='uk-text-break uk-text-justify'>The lacklustre living standards in foreign worker dormitories in Singapore, 
+                                otherwise unseen by the masses, was recently brought to public attention due to the COVID situation. Foreign worker 
+                                <strong style="color: #404040;">dormitories are cramped and enclosed</strong>, with many workers sharing the same room, packed into bunk beds. Currently, it is 
+                                estimated that there are 200,000 migrant workers housed in 43 purpose-built dormitories around Singapore.⁶</p>
+                            <p class='uk-text-break uk-text-justify'>Nevertheless, it is to be noted that there have been governmental measures to ensure the quality of 
+                                living conditions of the migrant workers. Licensed dormitories housing more than 1,000 workers each are required to comply with the 
+                                requirements under the Foreign Employee Dormitory Act (FEDA), such as providing facilities that include sick bays and isolation rooms.⁷</p>
+                            <p class='uk-text-break uk-text-justify'>The effectiveness of these measures, especially when put to the test, is still in question. Taking the COVID 
+                                period as an example, <strong style="color: #404040;">the cramped and stale conditions in the dormitories have contributed to the rapid spread of COVID</strong> in the migrant dorms causing 
+                                large scale outbreaks. By the end of April 2020, the number of coronavirus cases in Singapore increased by 15 times, swelling from 1,000 to more than 15,000 cases. 
+                                By May 2020, it had the largest number of cases of any country in Southeast Asia – with more than 90% of infections within the migrant workforce.⁸ Since the outbreaks 
+                                amongst the migrant workers started, the migrant workers have been living under tight restrictions for more than 18 months, even as most of them are fully vaccinated. 
+                                The separate treatment of these workers is evident; with Singapore striving to transit to a “new normal” and many looking forward to further easing of pandemic-related 
+                                restrictions, the situation has not changed much for the 275,000-odd migrant workers living in dormitories.</p>
+                            <p class='uk-text-break uk-text-justify'>Since last year, the workers have been mostly confined to their rooms due to the restrictions imposed, and only allowed to 
+                                leave for work or, for stipulated recreation centres on some days. This has <strong style="color: #404040;">impacted their mental health negatively⁹</strong>. In view of this, as well as their poor living 
+                                conditions, participants can consider possible actions that we can take to improve their situation. Community projects that participants can contemplate include 
+                                meaningful engagement sessions with the migrant workers and raising more awareness about the plight of the migrant workers. </p>
+                            <p class='uk-text-break uk-text-justify'>Other issues include questions <strong style="color: #404040;">about hygiene in the dormitories</strong>. Factory Converted Dormitories (“FCDs”) – a type of accommodation 
+                                that is already regulated by the FEDA – are plagued by serious hygiene-related issues. During the 2021 Committee of Supply, it was revealed that stray animals were found 
+                                to freely roam in certain FCD kitchens, in addition to unclean food preparation and disposal areas.¹⁰</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <div class='uk-inline'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Poor accommodation and living standards</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            <p class='uk-text-break uk-text-justify'>The lacklustre living standards in foreign worker dormitories in Singapore, 
+                                otherwise unseen by the masses, was recently brought to public attention due to the COVID situation. Foreign worker 
+                                <strong style="color: #404040;">dormitories are cramped and enclosed</strong>, with many workers sharing the same room, packed into bunk beds. Currently, it is 
+                                estimated that there are 200,000 migrant workers housed in 43 purpose-built dormitories around Singapore.⁶</p>
+                            <p class='uk-text-break uk-text-justify'>Nevertheless, it is to be noted that there have been governmental measures to ensure the quality of 
+                                living conditions of the migrant workers. Licensed dormitories housing more than 1,000 workers each are required to comply with the 
+                                requirements under the Foreign Employee Dormitory Act (FEDA), such as providing facilities that include sick bays and isolation rooms.⁷</p>
+                            <p class='uk-text-break uk-text-justify'>The effectiveness of these measures, especially when put to the test, is still in question. Taking the COVID 
+                                period as an example, <strong style="color: #404040;">the cramped and stale conditions in the dormitories have contributed to the rapid spread of COVID</strong> in the migrant dorms causing 
+                                large scale outbreaks. By the end of April 2020, the number of coronavirus cases in Singapore increased by 15 times, swelling from 1,000 to more than 15,000 cases. 
+                                By May 2020, it had the largest number of cases of any country in Southeast Asia – with more than 90% of infections within the migrant workforce.⁸ Since the outbreaks 
+                                amongst the migrant workers started, the migrant workers have been living under tight restrictions for more than 18 months, even as most of them are fully vaccinated. 
+                                The separate treatment of these workers is evident; with Singapore striving to transit to a “new normal” and many looking forward to further easing of pandemic-related 
+                                restrictions, the situation has not changed much for the 275,000-odd migrant workers living in dormitories.</p>
+                            <p class='uk-text-break uk-text-justify'>Since last year, the workers have been mostly confined to their rooms due to the restrictions imposed, and only allowed to 
+                                leave for work or, for stipulated recreation centres on some days. This has <strong style="color: #404040;">impacted their mental health negatively⁹</strong>. In view of this, as well as their poor living 
+                                conditions, participants can consider possible actions that we can take to improve their situation. Community projects that participants can contemplate include 
+                                meaningful engagement sessions with the migrant workers and raising more awareness about the plight of the migrant workers. </p>
+                            <p class='uk-text-break uk-text-justify'>Other issues include questions <strong style="color: #404040;">about hygiene in the dormitories</strong>. Factory Converted Dormitories (“FCDs”) – a type of accommodation 
+                                that is already regulated by the FEDA – are plagued by serious hygiene-related issues. During the 2021 Committee of Supply, it was revealed that stray animals were found 
+                                to freely roam in certain FCD kitchens, in addition to unclean food preparation and disposal areas.¹⁰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+    
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_4_image_column' class='uk-width-expand@m' uk-parallax='y: 120px;'>
+                    <div class='uk-inline' uk-scrollspy='cls: uk-animation-slide-right;'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Alienation of migrant workers</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            
+                            <p class='uk-text-break uk-text-justify'>Despite the migrant workers comprising an essential part of Singapore’s workforce, <strong style="color: #404040;">stereotypes and prejudices exist 
+                                against migrant workers</strong> whose jobs are seen to be 3D: Dirty, Dangerous and Demeaning. Such prejudices and biases have been exacerbated during the COVID 
+                                pandemic due to the outbreak within the migrant workforce.¹¹ </p>
+                            <p class='uk-text-break uk-text-justify'>A 2019 study on public knowledge and attitudes towards migrant workers in Japan, Malaysia, Singapore, and Thailand 
+                                by the International Labor Organization and UN Women reported that positive attitudes towards migrant workers have declined over the last decade, even as 
+                                overall labour migration has increased. Majority of survey respondents in the four countries perceived that migrant workers increased their crime rates and 
+                                threatened their country’s culture and heritage. Some among the public thought that migrant workers have a poor work ethic and that they cannot trust them.¹² </p>
+                            <p class='uk-text-break uk-text-justify'>Locally, anti-migrant sentiments have also been published in mainstream media. Popular socialite Jamie Chua drew flak 
+                                for an Instagram post about how she had a "disturbing nightmare" where she "dreamt of the Indian workers’ dorm and they were all rushing into my house".¹³  
+                                A forum letter published in Chinese daily Lianhe Zaobao blamed the Covid-19 outbreak in dormitories on migrant workers' personal hygiene and living habits. 
+                                The writer made xenophobic claims on how migrant workers come from less developed countries and says that their "lifestyle habits" - such as resting under 
+                                trees or on fields or gathering with their friends to drink beer and chat - would accompany them here.¹⁴ </p>
+                            <p class='uk-text-break uk-text-justify'>As for the solutions, integrating migrant workers into neighbourhoods, rather than isolating them in far-flung dormitories, 
+                                is ideal long-term. The discussion has been made about integrating migrant worker dormitories into residential areas, to increase interaction between the general 
+                                public and foreign workers, increasing physical integration There is, however, no current feasible plan yet, as locals demonstrate an unwillingness to let dormitories 
+                                be built in residential areas. For instance, in 2008, Serangoon Gardens residents signed a petition objecting to a new foreign worker dormitory in their neighbourhood. 
+                                Participants may ponder upon the possibilities of integrating the migrant worker community with the general population. How might community projects make a crucial contribution 
+                                to establishing consistent and meaningful interactions between migrant workers and the general public? </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <div class='uk-inline'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Alienation of migrant workers</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            <p class='uk-text-break uk-text-justify'>Despite the migrant workers comprising an essential part of Singapore’s workforce, <strong style="color: #404040;">stereotypes and prejudices exist 
+                                against migrant workers</strong> whose jobs are seen to be 3D: Dirty, Dangerous and Demeaning. Such prejudices and biases have been exacerbated during the COVID 
+                                pandemic due to the outbreak within the migrant workforce.¹¹ </p>
+                            <p class='uk-text-break uk-text-justify'>A 2019 study on public knowledge and attitudes towards migrant workers in Japan, Malaysia, Singapore, and Thailand 
+                                by the International Labor Organization and UN Women reported that positive attitudes towards migrant workers have declined over the last decade, even as 
+                                overall labour migration has increased. Majority of survey respondents in the four countries perceived that migrant workers increased their crime rates and 
+                                threatened their country’s culture and heritage. Some among the public thought that migrant workers have a poor work ethic and that they cannot trust them.¹² </p>
+                            <p class='uk-text-break uk-text-justify'>Locally, anti-migrant sentiments have also been published in mainstream media. Popular socialite Jamie Chua drew flak 
+                                for an Instagram post about how she had a "disturbing nightmare" where she "dreamt of the Indian workers’ dorm and they were all rushing into my house".¹³  
+                                A forum letter published in Chinese daily Lianhe Zaobao blamed the Covid-19 outbreak in dormitories on migrant workers' personal hygiene and living habits. 
+                                The writer made xenophobic claims on how migrant workers come from less developed countries and says that their "lifestyle habits" - such as resting under 
+                                trees or on fields or gathering with their friends to drink beer and chat - would accompany them here.¹⁴ </p>
+                            <p class='uk-text-break uk-text-justify'>As for the solutions, integrating migrant workers into neighbourhoods, rather than isolating them in far-flung dormitories, 
+                                is ideal long-term. The discussion has been made about integrating migrant worker dormitories into residential areas, to increase interaction between the general 
+                                public and foreign workers, increasing physical integration There is, however, no current feasible plan yet, as locals demonstrate an unwillingness to let dormitories 
+                                be built in residential areas. For instance, in 2008, Serangoon Gardens residents signed a petition objecting to a new foreign worker dormitory in their neighbourhood. 
+                                Participants may ponder upon the possibilities of integrating the migrant worker community with the general population. How might community projects make a crucial contribution 
+                                to establishing consistent and meaningful interactions between migrant workers and the general public? </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+        <div class="uk-padding-left" uk-scrollspy='cls: uk-animation-slide-left;'>
+            <h2 class='uk-text-bold uk-margin-remove-top'>Prominent Organisations</h2>
+        </div>
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_4_image_column' class='uk-width-expand@m' uk-parallax='y: 120px;'>
+                    <div class='uk-inline' uk-scrollspy='cls: uk-animation-slide-right;'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Healthserve¹⁵</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            
+                            <p class='uk-text-break uk-text-justify'>HealthServe offers general medical services as well as dermatology, 
+                                orthopaedic, occupational and physical therapy, and dental services. They provide casework and legal support 
+                                to migrant workers with work injury claims and legal, criminal or employment-related issues. Each year, they 
+                                assist on hundreds of cases. Their social workers follow up on their cases closely, for example, accompanying 
+                                workers to the hospital for their checkups. Trained volunteer counsellors provide weekly mental and emotional 
+                                support to these workers. Social assistance programs to unemployed migrant workers, including free meals, 
+                                subsidized transport, an emergency shelter, and an emergency fund. They also organise events with the intention 
+                                of building a community where the migrants feel supported and accepted and build skills such as English and computer 
+                                skills for the migrant workers. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <h2 class='uk-text-bold uk-margin-remove-top'>Prominent Organisations</h2>
+                    <div class='uk-inline'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Healthserve¹⁵</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            <p class='uk-text-break uk-text-justify'>HealthServe offers general medical services as well as dermatology, 
+                                orthopaedic, occupational and physical therapy, and dental services. They provide casework and legal support 
+                                to migrant workers with work injury claims and legal, criminal or employment-related issues. Each year, they 
+                                assist on hundreds of cases. Their social workers follow up on their cases closely, for example, accompanying 
+                                workers to the hospital for their checkups. Trained volunteer counsellors provide weekly mental and emotional 
+                                support to these workers. Social assistance programs to unemployed migrant workers, including free meals, 
+                                subsidized transport, an emergency shelter, and an emergency fund. They also organise events with the intention 
+                                of building a community where the migrants feel supported and accepted and build skills such as English and computer 
+                                skills for the migrant workers. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+    
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_4_image_column' class='uk-width-expand@m' uk-parallax='y: 120px;'>
+                    <div class='uk-inline' uk-scrollspy='cls: uk-animation-slide-right;'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Transient workers count too (TWC2)¹⁶</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            
+                            <p class='uk-text-break uk-text-justify'>One of the largest NGOs in Singapore, TWC2 provides advice and case 
+                                follow up regarding cases of abuse, unfair work practices, tardy work payments or unreasonable demands from 
+                                their employers. Programmes they run include Outreach Day, where volunteers visit places commonly visited by migrant 
+                                workers to hand out fliers spreading awareness about their rights and options, or even answer any questions on the spot; 
+                                the Cuff Road Project which offers a free breakfast and an ample dinner every weekday and lunch on Saturdays for unemployed 
+                                migrant workers; and other advocacy efforts involving social media, newsletters and email, collaborations with media organisations 
+                                and public and school talks.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <div class='uk-inline'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Transient workers count too (TWC2)¹⁶</h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            <p class='uk-text-break uk-text-justify'>One of the largest NGOs in Singapore, TWC2 provides advice and case 
+                                follow up regarding cases of abuse, unfair work practices, tardy work payments or unreasonable demands from 
+                                their employers. Programmes they run include Outreach Day, where volunteers visit places commonly visited by migrant 
+                                workers to hand out fliers spreading awareness about their rights and options, or even answer any questions on the spot; 
+                                the Cuff Road Project which offers a free breakfast and an ample dinner every weekday and lunch on Saturdays for unemployed 
+                                migrant workers; and other advocacy efforts involving social media, newsletters and email, collaborations with media organisations 
+                                and public and school talks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+        <div class="uk-padding-left" uk-scrollspy='cls: uk-animation-slide-left;'>
+            <h2 class='uk-text-bold uk-margin-remove-top'>Key Stakeholders</h2>
+            <p class="uk-text-break uk-text-justify uk-padding-right">You may wish to consider this issues from the perspectives of various stakeholders, 
+                including but not limited to:</p>
+                <ol>
+                    <li class="uk-text-break uk-text-justify uk-padding-small">Migrant Workers</li>
+                    <li class="uk-text-break uk-text-justify uk-padding-small">Ministry of Manpower and the Government of Singapore </li>
+                    <li class="uk-text-break uk-text-justify uk-padding-small">Employers </li>
+                    <li class="uk-text-break uk-text-justify uk-padding-small">Social groups and social workers</li>
+                    <li class="uk-text-break uk-text-justify uk-padding-small">Human rights activists or groups </li>
+                    <li class="uk-text-break uk-text-justify uk-padding-small">General public </li>
+                        </li>
+                </ol>
+        </div>
+        
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+        
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <h2 class='uk-text-bold uk-margin-remove-top'>Key Stakeholders</h2>
+                    <p class="uk-text-break uk-text-justify">You may wish to consider this issues from the perspectives of various stakeholders, 
+                        including but not limited to:</p>
+                        <ol>
+                            <li class="uk-text-break uk-text-justify uk-padding-small">Migrant Workers</li>
+                            <li class="uk-text-break uk-text-justify uk-padding-small">Ministry of Manpower and the Government of Singapore </li>
+                            <li class="uk-text-break uk-text-justify uk-padding-small">Employers </li>
+                            <li class="uk-text-break uk-text-justify uk-padding-small">Social groups and social workers</li>
+                            <li class="uk-text-break uk-text-justify uk-padding-small">Human rights activists or groups </li>
+                            <li class="uk-text-break uk-text-justify uk-padding-small">General public </li>
+                                </li>
+                        </ol>
+                    
+            </div>
+
+        </div> 
+    </div>
+
+    <div id='body_content_4' class='uk-section uk-margin-top uk-margin-large-bottom uk-padding-remove-top uk-visible@m'>
+    
+        <div class='uk-grid uk-padding uk-padding-remove-left uk-padding-remove-right' uk-grid>
+            <div id='icon_left' class='uk-width-auto'>
+                <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+            </div> 
+        
+            <div id='body_content_4_image_column' class='uk-padding-remove-left' uk-parallax='y: 120px;'>
+            
+            </div>
+            
+            <div class="uk-grid uk-width-expand">
+                <div id='body_content_4_image_column' class='uk-width-expand@m' uk-parallax='y: 120px;'>
+                    <div class='uk-inline' uk-scrollspy='cls: uk-animation-slide-right;'>
+                        <h3 class='uk-text-bold uk-margin-remove-top'>Footnote Links </h3>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            
+                            <ol>
+                                
+                                <li class='uk-text-break uk-text-justify'><a href=" https://www.hrw.org/world-report/2021/country-chapters/singapore" style="color: #1E87F0;"> https://www.hrw.org/world-report/2021/country-chapters/singapore</a></li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.business-humanrights.org/en/latest-news/singapore-migrant-workers-struggle-with-low-wages-absent-a-minimum-wage-law-incidences-of-non-payment-are-common/" style="color: #1E87F0;">https://www.business-humanrights.org/en/latest-news/singapore-migrant-workers-struggle-with-low-wages-absent-a-minimum-wage-law-incidences-of-non-payment-are-common/.</a> </li>
+                                <li class='uk-text-break uk-text-justify'> <a href=" https://www.mom.gov.sg/employment-practices/hours-of-work-overtime-and-rest-days" style="color: #1E87F0;"> https://www.mom.gov.sg/employment-practices/hours-of-work-overtime-and-rest-days</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://edition.cnn.com/2018/02/24/asia/singapore-migrant-workers-intl/index.html" style="color: #1E87F0;">https://edition.cnn.com/2018/02/24/asia/singapore-migrant-workers-intl/index.html. </a> </li>
+                                <li class='uk-text-break uk-text-justify'> <a href="https://www.theguardian.com/global-development-professionals-network/2014/apr/21/singapore-address-treatment-migrant-workers" style="color: #1E87F0;">https://www.theguardian.com/global-development-professionals-network/2014/apr/21/singapore-address-treatment-migrant-workers</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.channelnewsasia.com/singapore/coronavirus-covid-19-foreign-workers-big-read-dormitories-936961" style="color: #1E87F0;">https://www.channelnewsasia.com/singapore/coronavirus-covid-19-foreign-workers-big-read-dormitories-936961</a></li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.straitstimes.com/singapore/all-dorms-to-be-regulated-under-a-single-law-the-foreign-employee-dormitories-act-mom" style="color: #1E87F0;">https://www.straitstimes.com/singapore/all-dorms-to-be-regulated-under-a-single-law-the-foreign-employee-dormitories-act-mom</a></li>
+                                <li class='uk-text-break uk-text-justify'><a href=" https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-accommodation" style="color: #1E87F0;"> https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-accommodation</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.nytimes.com/2021/09/29/world/in-lockdown-for-18-months-singapores-migrant-workers-yearn-for-freedom.html" style="color: #1E87F0;">https://www.nytimes.com/2021/09/29/world/in-lockdown-for-18-months-singapores-migrant-workers-yearn-for-freedom.html</a> 
+                                </li>
+                                <li class='uk-text-break uk-text-justify'> <a href="https://law.nus.edu.sg/impact/covid-19-shedding-light-on-the-plight-and-laws-regulating-migrant-worker-dormitories-in-singapore/" style="color: #1E87F0;">https://law.nus.edu.sg/impact/covid-19-shedding-light-on-the-plight-and-laws-regulating-migrant-worker-dormitories-in-singapore/</a> 
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination" style="color: #1E87F0;">https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination</a> 
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination" style="color: #1E87F0;">https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination</a>
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://sg.style.yahoo.com/singaporean-socialite-contrite-sharing-racially-054312331.html" style="color: #1E87F0;">https://sg.style.yahoo.com/singaporean-socialite-contrite-sharing-racially-054312331.html</a>
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.straitstimes.com/singapore/letter-on-dorm-cases-xenophobic-shanmugam" style="color: #1E87F0;"> https://www.straitstimes.com/singapore/letter-on-dorm-cases-xenophobic-shanmugam</a> </li>
+
+
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.healthserve.org.sg" style="color: #1E87F0;">https://www.healthserve.org.sg</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://twc2.org.sg" style="color: #1E87F0;"> https://twc2.org.sg</a></li>
+                               
+                            </ol>
+                    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='icon_right' class='uk-width-auto uk-padding-remove-left'>
+                <div class="uk-inline">
+                    <img style='padding-top: 5px; visibility: hidden;' data-src='images/logos/logo_green.png' height='75px' width="75px" uk-img>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div id='body_content_4_s' class='uk-section uk-hidden@m'>
+        <div class='uk-grid uk-padding uk-margin-left uk-margin-remove-left' uk-grid>
+            
+            <div class="uk-grid uk-width-expand uk-margin-left uk-margin-remove-left uk-padding-remove-left">
+                <div id='body_content_4_image_column' class='uk-width-1-3@m uk-padding-remove-left'>
+                    <div class='uk-inline'>
+                        <h4 class='uk-text-bold uk-margin-remove-top'>Footnote Links</h4>
+                    </div>
+                </div>
+
+                <div id='body_content_4_text_column' class='uk-width-2-3@m uk-margin-left uk-margin-remove-left uk-padding-remove-left' uk-scrollspy='cls: uk-animation-slide-right;'>
+                    <div class='uk-margin-top'>
+                        <div>
+                            <ol>
+                                <li class='uk-text-break uk-text-justify'><a href=" https://www.hrw.org/world-report/2021/country-chapters/singapore" style="color: #1E87F0;"> https://www.hrw.org/world-report/2021/country-chapters/singapore</a></li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.business-humanrights.org/en/latest-news/singapore-migrant-workers-struggle-with-low-wages-absent-a-minimum-wage-law-incidences-of-non-payment-are-common/" style="color: #1E87F0;">https://www.business-humanrights.org/en/latest-news/singapore-migrant-workers-struggle-with-low-wages-absent-a-minimum-wage-law-incidences-of-non-payment-are-common/.</a> </li>
+                                <li class='uk-text-break uk-text-justify'> <a href=" https://www.mom.gov.sg/employment-practices/hours-of-work-overtime-and-rest-days" style="color: #1E87F0;"> https://www.mom.gov.sg/employment-practices/hours-of-work-overtime-and-rest-days</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://edition.cnn.com/2018/02/24/asia/singapore-migrant-workers-intl/index.html" style="color: #1E87F0;">https://edition.cnn.com/2018/02/24/asia/singapore-migrant-workers-intl/index.html. </a> </li>
+                                <li class='uk-text-break uk-text-justify'> <a href="https://www.theguardian.com/global-development-professionals-network/2014/apr/21/singapore-address-treatment-migrant-workers" style="color: #1E87F0;">https://www.theguardian.com/global-development-professionals-network/2014/apr/21/singapore-address-treatment-migrant-workers</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.channelnewsasia.com/singapore/coronavirus-covid-19-foreign-workers-big-read-dormitories-936961" style="color: #1E87F0;">https://www.channelnewsasia.com/singapore/coronavirus-covid-19-foreign-workers-big-read-dormitories-936961</a></li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.straitstimes.com/singapore/all-dorms-to-be-regulated-under-a-single-law-the-foreign-employee-dormitories-act-mom" style="color: #1E87F0;">https://www.straitstimes.com/singapore/all-dorms-to-be-regulated-under-a-single-law-the-foreign-employee-dormitories-act-mom</a></li>
+                                <li class='uk-text-break uk-text-justify'><a href=" https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-accommodation" style="color: #1E87F0;"> https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-accommodation</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.nytimes.com/2021/09/29/world/in-lockdown-for-18-months-singapores-migrant-workers-yearn-for-freedom.html" style="color: #1E87F0;">https://www.nytimes.com/2021/09/29/world/in-lockdown-for-18-months-singapores-migrant-workers-yearn-for-freedom.html</a> 
+                                </li>
+                                <li class='uk-text-break uk-text-justify'> <a href="https://law.nus.edu.sg/impact/covid-19-shedding-light-on-the-plight-and-laws-regulating-migrant-worker-dormitories-in-singapore/" style="color: #1E87F0;">https://law.nus.edu.sg/impact/covid-19-shedding-light-on-the-plight-and-laws-regulating-migrant-worker-dormitories-in-singapore/</a> 
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination" style="color: #1E87F0;">https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination</a> 
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination" style="color: #1E87F0;">https://www.ihrb.org/focus-areas/covid-19/covid19-migrant-workers-discrimination</a>
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://sg.style.yahoo.com/singaporean-socialite-contrite-sharing-racially-054312331.html" style="color: #1E87F0;">https://sg.style.yahoo.com/singaporean-socialite-contrite-sharing-racially-054312331.html</a>
+                                </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.straitstimes.com/singapore/letter-on-dorm-cases-xenophobic-shanmugam" style="color: #1E87F0;"> https://www.straitstimes.com/singapore/letter-on-dorm-cases-xenophobic-shanmugam</a> </li>
+
+
+                                <li class='uk-text-break uk-text-justify'><a href="https://www.healthserve.org.sg" style="color: #1E87F0;">https://www.healthserve.org.sg</a> </li>
+                                <li class='uk-text-break uk-text-justify'><a href="https://twc2.org.sg" style="color: #1E87F0;"> https://twc2.org.sg</a></li>
+                               
+                            </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    
+
+
+
+
+        
+
+        <div class='uk-margin-medium-top uk-inline' style="background-color: #404040; width: 100%;">
+            <div class="uk-align-center uk-margin-remove-bottom uk-margin-top uk-padding uk-margin-bottom" style="width: fit-content;">
+                <div class='uk-inline@m'>
+                    <div class="uk-grid uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-margin-bottom">
+                        <div class="uk-inline uk-flex uk-margin-auto-vertical uk-width-auto">
+                            <span class='material-icons' style="color: white;">room</span>
+                        </div>
+                        <div class="uk-inline uk-width-expand">
+                            <p class='uk-inline uk-light uk-text-break'>661 Bukit Timah Rd, Singapore 269734</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='uk-inline@m'>
+                    <div class="uk-grid uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-margin-bottom">
+                        <div class="uk-inline uk-flex uk-width-auto uk-margin-auto-vertical">
+                            <span class='material-icons' style="color: white;">email</span>
+                        </div>
+                        <div class="uk-inline uk-flex uk-margin-auto-vertical uk-width-expand">
+                            <p class='uk-inline uk-light uk-text-break'> servicelearningsummit@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-padding-large uk-padding-remove-top uk-padding-remove-bottom">
+                <p class="uk-padding uk-text-center uk-padding-remove-top uk-padding-remove-bottom">This is the SLS (Service Learning Summit) 2021 website. Any advice and information found on the pages are solely for the event and educational purposes only. Information related to the speakers are displayed with their consent.<br>
+                <br>
+                <span style="font-size: 80%;">© Service Learning Summit 2021. All rights reserved.</span></p>
+            </div>
+        </div>
+
+        <script src='../js/main.js'></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                //The first argument are the elements to which the plugin shall be initialized
+                //The second argument has to be at least a empty object or a object with your desired options
+                OverlayScrollbars(document.querySelectorAll("body"), { });
+                // setCountDown();
+                let d1 = Date.parse("December 6, 2021");
+				let a = new Date();
+				let d2 = Date.parse(a);
+				document.getElementById("days").innerHTML = Math.floor((d1-d2)/(86400000));
+                // document.getElementById("hours").innerHTML = formatDate(d, "hh : mm");
+
+                document.getElementById("days_").innerHTML =  Math.floor((d1-d2)/(86400000));
+                // x.innerHTML = formatDate(d, "dddd h:mmtt d MMM yyyy");
+            });
+
+            var prevcontext = setSize(window.innerWidth)
+            
+            window.onresize = function(){
+                curcontext = setSize(window.innerWidth)
+                if(curcontext != prevcontext) {
+                    location.reload()
+                }
+                prevcontext = curcontext
+            }
+        </script>
+
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+        <script type="text/javascript" src="../js/overlayscrollbars.js"></script>
+    </body>
+</html> 
