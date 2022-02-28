@@ -62,83 +62,131 @@
                 </div>
             -->
 
-                <div id='top_nav_container' class='uk-position-top uk-visible@m'>
-                    <nav class='uk-navbar-container uk-navbar-transparent uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-margin-small-left' uk-navbar>
-                        <div class="uk-navbar-left uk-padding-small uk-padding-remove-left">
-                            <ul class="uk-navbar-nav"  onmouseover='showProfiles("profilesBar")' onmouseleave='hideProfiles("profilesBar")'>
-                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../home">Home</a></li>
-                                <li class='uk-text-bold uk-active uk-margin-large-right'><a style='text-transform: capitalize;' href="../programmes">Programmes</a></li>
-                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../speakers">Our Speakers</a></li>
-                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../about">About Us</a></li>
-                                <li class='uk-text-bold uk-margin-large-right'><a style='text-transform: capitalize;' href="../join">Join Us</a></li>
-                            </ul>
-                        </div>
-                    
-                    </nav>
+            <div id="top_nav_container" class="uk-position-top uk-visible@m" style="background-color: #404040;">
+                <nav class="uk-navbar-container uk-navbar-transparent uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-margin-small-left uk-navbar" uk-navbar="">
+                    <div class="uk-navbar-left uk-padding-small uk-padding-remove-left">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-text-bold uk-margin-large-right"><a style="text-transform: capitalize;" href="../home/index.html">Home</a></li>
+                            <li class="uk-text-bold uk-margin-large-right"><a style="text-transform: capitalize;" href="../about/hccri.html" onmouseover="showNav('aboutBar')">About</a></li>
+                            <li class="uk-text-bold uk-margin-large-right"><a style="text-transform: capitalize;" href="../registration/index.html">Registration</a></li>
+                            <li class="uk-text-bold uk-margin-large-right"><a style="text-transform: capitalize;" href="../councils/index.html">Councils</a></li>
+                            <li class="uk-text-bold uk-margin-large-right uk-active"><a style="text-transform: capitalize;" href="../schedule/index.html">Schedule</a></li>
+                            <li class="uk-text-bold uk-margin-large-right"><a style="text-transform: capitalize;" href="../resources/index.html">Resources</a></li>
+                            <li class="uk-text-bold uk-margin-large-right"><a style="text-transform: capitalize;" href="../faq/index.html">FAQ</a></li>
+                            <li class="uk-text-bold "><a style="text-transform: capitalize;" href="../contact/index.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <span  href="#offcanvas-slide" class="uk-button uk-hidden@m uk-padding-small" style="color: #38b6ff; height: fit-content;" uk-toggle uk-icon="icon: menu; ratio: 1.5;"></span>
+                </nav>
 
-                    <div id="offcanvas-slide" uk-offcanvas>
-                        <div class="uk-offcanvas-bar">
-                            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
-                                <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
-                                    <div class='uk-inline-block'>
-                                        <a class='uk-inline' style='text-transform: capitalize;' href="../home">Home</a>
-                                        <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                    </div>
-                                </li>
-                                <li class="uk-text-bold uk-active uk-margin-large-right uk-margin-bottom uk-parent">
-                                    <a class="uk-inline" style="text-transform: capitalize; color: white;" href="../programmes/index.html">Programmes</a>
+                <nav id="aboutBar" onmouseleave="hideNav('aboutBar')" class="uk-navbar-container uk-padding uk-navbar-transparent uk-padding-remove-top uk-padding-remove-bottom uk-margin-small-left uk-visible@m uk-navbar" style="display: none;" uk-navbar="">
+                    <div class="uk-navbar-left uk-padding-small uk-padding-remove-left uk-margin-bottom">
+                        <ul class="uk-nav uk-inline">
+                            <li class="uk-margin-large-right uk-inline">
+                                <div>
+                                    <a class="uk-inline" style="text-transform: capitalize; color: white;" href="../about/hccri.html">HCCRI</a>
+                                    <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+                            <li class="uk-margin-large-right uk-inline">
+                                <div>
+                                    <a class="uk-inline" style="text-transform: capitalize; color: white;" href="../about/hacas.html">HACAS</a>
+                                    <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+                            <li class="uk-margin-large-right uk-inline">
+                                <div>
+                                    <a class="uk-inline" style="text-transform: capitalize; color: white;" href="../about/secretariat.html">The Secretariat</a>
+                                    <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
                 
-                                    <ul class="uk-nav-sub uk-margin-small-top" hidden="">
-                                        <li>
-                                            <div class="uk-inline-block">
-                                                <a href="../programmes/Programmes_poverty.html">Poverty</a>
-                                                <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                            </div>
-                                        </li>
-                                        <li class="uk-margin-small-top">
-                                            <div class="uk-inline-block">
-                                                <a href="../programmes/Programmes_environment.html">Environment</a>
-                                                <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                            </div>
-                                        </li>
-                                        <li class="uk-margin-small-top">
-                                            <div class="uk-inline-block">
-                                                <a href="../programmes/Programmes_special_needs.html">Special Needs</a>
-                                                <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                            </div>
-                                        </li>
-                                        <li class="uk-margin-small-top">
-                                            <div class="uk-inline-block">
-                                                <a href="../programmes/Programmes_migrant_workers.html">Migrant Workers</a>
-                                                <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                 <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
-                                    <div class='uk-inline-block'>
-                                        <a class='uk-inline' style='text-transform: capitalize;' href="../speakers">Our Speakers</a>
-                                        <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                    </div>
-                                </li>
-                                <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
-                                    <div class='uk-inline-block'>
-                                        <a class='uk-inline' style='text-transform: capitalize;' href="../about">About Us</a>
-                                        <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                    </div>
-                                </li>
-                                <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
-                                    <div class='uk-inline-block'>
-                                        <a class='uk-inline' style='text-transform: capitalize;' href="../join">Join Us</a>
-                                        <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
-                                    </div>
-                                </li>
+            
 
+            <span  href="#offcanvas-slide" class="uk-button uk-hidden@m uk-padding-small" style="color: #38b6ff; height: fit-content;" uk-toggle uk-icon="icon: menu; ratio: 1.5;"></span>
+
+            
+            <div id="offcanvas-slide" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+                        <li class='uk-text-bold uk-active uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../home/index.html">Home</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                            </div>
+                        </li>
+
+                        <li class="uk-text-bold uk-margin-large-right uk-margin-bottom uk-parent">
+                            <a style="text-transform: capitalize; color: white;" href="#">About</a>
+                            <ul class="uk-nav-sub uk-margin-small-top" hidden="">
+                                <li>
+                                    <div class="uk-inline-block">
+                                        <a href="../about/hccri.html">HCCRI</a>
+                                        <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                    </div>
+                                </li>
+                                <li class="uk-margin-small-top">
+                                    <div class="uk-inline-block">
+                                        <a href="../about/hccri.html">HACAS</a>
+                                        <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                    </div>
+                                </li>
+                                <li class="uk-margin-small-top">
+                                    <div class="uk-inline-block">
+                                        <a href="../about/secretariat.html">The Secretariat</a>
+                                        <div class="uk-inline uk-margin-small-left" style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                                    </div>
+                                </li>
                             </ul>
-                        </div>
-                    </div>
+                        </li>
+                        
+                        
+                        <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../registration/index.html">Registration</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                            </div>
+                        </li>
+                        <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../councils/index.html">Councils</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                            </div>
+                        </li>
+                        <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../schedule/index.html">Schedule</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px; background-color: #38b6ff;"></div>
+                            </div>
+                        </li>
+                        <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../resources/index.html">Resources</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                            </div>
+                        </li>
+                        <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../faq/index.html">FAQ</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                            </div>
+                        </li>
+                        <li class='uk-text-bold uk-margin-large-right uk-margin-bottom'>
+                            <div class='uk-inline-block'>
+                                <a class='uk-inline' style='text-transform: capitalize;' href="../contact/index.html">Contact</a>
+                                <div class='uk-inline uk-margin-small-left' style="padding: 1px; width: 10px; height: 10px; border-radius: 100px;"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
                 
                 </div>
                 </div>
@@ -153,13 +201,14 @@
         </div>
 
         <h2 class="uk-text-bold" style="margin-left: 5.5vw">Key events at a glance</h2>
+        
 
-        <p class="uk-text-large uk-text-bold uk-visible@m"><span style="margin-left: 5.5vw">Monday</span><span style="margin-left: 40vw">Tuesday</span></p>
+        <p class="uk-text-large uk-text-bold uk-visible@m"><span style="margin-left: 5.5vw">30 May 2022</span><span style="margin-left: 20vw">31 May 2022</span><span style="margin-left: 21vw">1 June 2022</span></p>
         <div class="uk-section uk-position-relative uk-padding-remove-top" style="min-width: 100vw;">
             <div class="uk-grid uk-width-expand uk-padding-remove uk-grid-stack" uk-grid="">
                 <div class="uk-width-expand uk-flex uk-first-column">
-                    <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-2@m uk-width-expand uk-padding-remove uk-margin-left" uk-grid="">
-                        <p class="uk-text-large uk-text-bold uk-hidden@m uk-first-column">Monday</p>
+                    <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m uk-width-expand uk-padding-remove uk-margin-left" uk-grid="">
+                        <p class="uk-text-large uk-text-bold uk-hidden@m uk-first-column">30 May 2022</p>
                         <div class="uk-grid uk-margin-top uk-first-column" style="margin-right: 1vw; margin-left: -2vw" uk-grid="">
                             <div class="uk-width-auto uk-first-column">
                                 <div style="background-color: #B23A83; border-radius: 20px; height: 100%; width: 10px;"></div>
@@ -169,49 +218,49 @@
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; "> 0900 - 1000: Opening Ceremony</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; "> 0900 - 0930: Registration</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">1000 - 1100: Icebreakers</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">0930 - 1030: Opening Ceremony</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white"> 1100 - 1230: Lunch</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white"> 1030 - 1200: Dialogue with GOH</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1230 - 1330: Focus Group Discussions</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1200 - 1300: LUNCH</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1330 - 1430: Introduction to General Interest Groups</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1300 - 1530: Committee Session 1</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1430 - 1530: "A Journey in Service" </h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1530 - 1600: BREAK </h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1530 - 1630: Service Learning Workshop</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1600 - 1800: Committee Session 2</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -223,49 +272,49 @@
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">0900 - 1000: Opening Ceremony</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; "> 0900 - 0930: Registration</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">1000 - 1100: Icebreakers</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">0930 - 1030: Opening Ceremony</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1100 - 1230: Lunch</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white"> 1030 - 1200: Dialogue with GOH</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1230 - 1330: Focus Group Discussions</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1200 - 1300: LUNCH</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1330 - 1430: Introduction to General Interest Groups</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1300 - 1530: Committee Session 1</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1430 - 1530: “A Journey in Service” </h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1530 - 1600: BREAK </h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1530 - 1630: Service Learning Workshop</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1600 - 1800: Committee Session 2</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -273,7 +322,7 @@
                             </div> 
     
                         </div>
-                        <p class="uk-text-large uk-text-bold uk-hidden@m uk-grid-margin uk-first-column">Tuesday</p>
+                        <p class="uk-text-large uk-text-bold uk-hidden@m uk-grid-margin uk-first-column">31 May 2022</p>
                         <div class="uk-grid uk-margin-top uk-first-column" style="margin-right: 1vw; margin-left: -2vw" uk-grid="">
                             <div class="uk-width-auto uk-first-column">
                                 <div style="background-color: #2C4A80; border-radius: 20px; height: 100%; width: 10px;"></div>
@@ -283,45 +332,39 @@
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">0900 - 1000: Focus Group Discussions </h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">0900 - 1200: Committee Session 4 </h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1000 - 1130: “A Career in Social Service”</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1200 - 1300: LUNCH</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1130 - 1300: Lunch </h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1300 - 1530: Committee Session 5 </h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1300 - 1400: Focus Group Discussions</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1530 - 1600: BREAK</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1400 - 1500: Group Sharings</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1600 - 1800: Committee Session 6</h3>
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div>
-                                            <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1500 - 1545: Closing Ceremony</h3>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             
@@ -330,47 +373,86 @@
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">0900 - 1000: Focus Group Discussions</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">0900 - 1200: Committee Session 4 </h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1000 - 1130: “A Career in Social Service”</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1200 - 1300: LUNCH</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1130 - 1300: Lunch</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1300 - 1530: Committee Session 5 </h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1300 - 1400: Focus Group Discussions</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1530 - 1600: BREAK</h3>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1400 - 1500: Group Sharings</h3>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #2C4A80;">
-                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1500 - 1545: Closing Ceremony</h3>
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white">1600 - 1800: Committee Session 6</h3>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        <p class="uk-text-large uk-text-bold uk-hidden@m uk-first-column">1 June 2022</p>
+                        <div class="uk-grid uk-margin-top uk-first-column" style="margin-right: 1vw; margin-left: -2vw" uk-grid="">
+                            <div class="uk-width-auto uk-first-column">
+                                <div style="background-color: #B23A83; border-radius: 20px; height: 100%; width: 10px;"></div>
+                            </div>
+                            <div class="uk-visible@m uk-width-expand uk-margin-small-left uk-padding-remove-left uk-scrollspy-inview uk-animation-slide-right" uk-scrollspy="cls: uk-animation-slide-right;" style="">
+                                <ul class="uk-list uk-padding-remove-left" style="min-width: 15vw;">
+                                    <li>
+                                        <div>
+                                            <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; "> 0900 - 1100: Committee Session 7</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">1100 - 1200: Closing Ceremony</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+    
+                            <div class="uk-hidden@m uk-width-expand uk-margin-small-left uk-padding-remove-left uk-scrollspy-inview uk-animation-slide-right" uk-scrollspy="cls: uk-animation-slide-right;" style="">
+                                <ul class="uk-list uk-padding-remove-left uk-padding-remove-right" style="max-width: 60vw;">
+                                    <li>
+                                        <div>
+                                            <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; "> 0900 - 1100: Committee Session 7</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="uk-card-small uk-card-hover uk-card-body" style="background-color: #B23A83;">
+                                                <h3 class="uk-text-bold uk-text-middle" style="color: white; ">1100 - 1200: Closing Ceremony</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div> 
+    
                         </div>
                     </div>
                 </div>
