@@ -178,3 +178,8 @@ svg:not(:root) {
     color: #fff;
     border-bottom: 4px solid #38b6ff;
   }
+
+  .uk-margin-bottom-1{
+    margin-bottom: 5px;
+
+  }
