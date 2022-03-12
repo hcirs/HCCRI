@@ -128,7 +128,7 @@ svg:not(:root) {
   .uk-button-medium {
     padding: 0 20px;
     line-height: 52px;
-    font-size: 0.875rem;
+    font-size: 19px;
     width: 200px;
   }
 
@@ -171,6 +171,7 @@ svg:not(:root) {
     background-color: #6d0d0d;
     color: #fff;
     border: 1px solid transparent;
+    font-size: 19px;
   }
 
   .uk-button-primary:hover,
